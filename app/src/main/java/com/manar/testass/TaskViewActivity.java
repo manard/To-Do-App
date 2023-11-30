@@ -71,14 +71,14 @@ public class TaskViewActivity extends AppCompatActivity {
                     Intent intent2=new Intent(TaskViewActivity.this,DoneViewActivity.class);//this intent to pass the name of task to Done Activity
                     String txt_value=txtview.getText().toString();
                     intent2.putExtra(txtText,txt_value);
-                  //  startActivity(intent2);
+                    startActivity(intent2);
 
                 }
                 else if(chk2.isChecked()){//if due
                     Intent intent2=new Intent(TaskViewActivity.this,DueViewActivity.class);//this intent to pass the name of task to Due Activity
                     String txt_value=txtview.getText().toString();
                     intent2.putExtra(txtText,txt_value);
-                   // startActivity(intent2);
+                    startActivity(intent2);
                 }
                 Toast.makeText(TaskViewActivity.this, "Data Saved", Toast.LENGTH_SHORT).show();
 
