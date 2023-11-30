@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img1"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edttxt"
+        style="@style/txtStyle"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Enter your task"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn"
+        style="@style/ButtonStyle"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="30dp"
+        android:text="Add"
+        android:textColor="#FFFCFC"
+        android:textColorHighlight="#673AB7"
+        android:textColorHint="#9C27B0"
+        android:textColorLink="#9C27B0"
+        app:iconTint="#673AB7" />
+
+    <RadioGroup
+        android:id="@+id/rdgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dp"
+            android:text="Show done tasks" />
+
+        <RadioButton
+            android:id="@+id/rdbtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Show due tasks" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:dividerHeight="2dp"
+        android:divider="@color/cardview_shadow_start_color"
+        android:scrollbarSize="5dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
