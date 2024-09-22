@@ -1,5 +1,4 @@
-Project Name: To Do App
-Using Android Studio , in java
+<h1>To Do App</h1>
 The "To Do" application has been developed in a way that enables users to add specific tasks and then change the status of these tasks to either 
 "Due" or "Done". Users can also view a list of completed and incomplete tasks.
 
